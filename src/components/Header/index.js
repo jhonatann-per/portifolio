@@ -1,12 +1,16 @@
 import React from "react";
-import { HeaderContainer } from "./styles";
+import { HeaderContainer, OptionsButton, Buttons  } from "./styles";
 
 
 const Header = () => {
   return (
     <HeaderContainer>
-      <h1>Meu Portfólio</h1>
-      <p>Bem-vindo ao meu portfólio online!</p>
+      <h1>Tudo Sobre mim</h1>
+      <OptionsButton>
+        <Buttons>Projetos</Buttons>
+        <Buttons>Tecnologias</Buttons>
+      </OptionsButton>
+      <p>Bem-vindo!</p>
     </HeaderContainer>
   );
 };
