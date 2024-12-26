@@ -6,16 +6,18 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80vw;
+  width: 77vw;
+  height: 30vh;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color:transparent;
   border-radius: 10px;
   margin: 10px 0;
+  border: 1px solid white;
 `;
 
 export const Title = styled.h2`
   margin-bottom: 10px;
-  color: #333;
+  color: white;
 `;
 
 export const TechList = styled.div`
@@ -32,7 +34,7 @@ export const TechItem = styled.li`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: #666;
+  color: white;
   padding: 20px;
   margin: 15px;
 `;
