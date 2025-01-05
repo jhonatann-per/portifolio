@@ -3,14 +3,13 @@ import { FaMapMarkerAlt, FaLinkedin } from 'react-icons/fa';
 import {
   Container,
   ImagePerfil,
-  Texto,
   ConteudoPerfil,
   ConteudoTexto,
   TituloContainer,
   ListDiv,
   List,
   ListItem,
-  IconsDiv,
+  SocialDiv,
   Skils,
   Titulo
 } from "./styles";
@@ -18,7 +17,7 @@ import {
 const AboutMe = () => {
   const [perfilImg, setPerfilImg] = useState('');
   const [githubData, setGithubData] = useState({});
-  const [currentWord, setCurrentWord] = useState('Desenvolvedor');
+  const [currentWord, setCurrentWord] = useState('Fullstack');
 
   useEffect(() => {
     const fetchProfileData = async () => {
@@ -28,14 +27,15 @@ const AboutMe = () => {
         setPerfilImg(data.avatar_url);
         setGithubData(data);
       } catch (error) {
-        console.error("Erro: dados não encontrados!", error);
+        console.error("Erro ao buscar os dados do GitHub:", error);
       }
     };
+
     fetchProfileData();
   }, []);
 
   useEffect(() => {
-    const words = ['front-end', 'back-end'];
+    const words = ['Front-end', 'Back-end', 'Desenvolvedor'];
     let index = 0;
 
     const intervalId = setInterval(() => {
@@ -59,23 +59,23 @@ const AboutMe = () => {
           />
         )}
         { githubData && (
-          <IconsDiv>
+          <SocialDiv>
             <p><FaMapMarkerAlt style={{ marginRight: '8px', color: '#fff' }}/>  {githubData.location}</p>
-            <p><FaLinkedin style={{ marginRight: '8px', color: '#0077b5' }} /> <a href="https://www.linkedin.com/in/jhonatann-per/" target="_blank" rel="noopener noreferrer">Meu LinkedIn</a></p>
-          </IconsDiv>
+            <p><FaLinkedin style={{ marginRight: '8px', color: '#0077b5' }} /> <a href="https://www.linkedin.com/in/jhonatan-pereira-aa66b0200/" target="_blank" rel="noopener noreferrer">Meu LinkedIn</a></p>
+          </SocialDiv>
         )}
         <Skils>
-          <Titulo>{currentWord}</Titulo>
+          <h1>{currentWord}</h1>
         </Skils>
       </ConteudoPerfil>
       
       <ConteudoTexto>
-        <Texto>
+        <p>
           Desde 2019, atuo na área de tecnologia, focando em desenvolver minhas habilidades e conhecimentos. 
           Atualmente, estou buscando realizar meu sonho de me tornar um desenvolvedor fullstack, combinando 
           minha paixão por front-end e back-end para criar soluções completas e inovadoras.
-        </Texto>
-        
+        </p>
+      
         <ListDiv>
           <List>
             <ListItem style={{ fontSize: '1.5em', fontWeight: 'bold', content: "none" }}>Qualidades: </ListItem>

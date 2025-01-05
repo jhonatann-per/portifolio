@@ -14,6 +14,9 @@ export const HeaderContainer = styled.div`
   @media (max-width: 768px) { 
     flex-direction: column; 
   }
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
 `;
 
 export const OptionsButton = styled.div`
@@ -27,6 +30,9 @@ export const OptionsButton = styled.div`
   background-color: rgba(242, 242, 242, 0.05);
   &:hover {
     border: 1px solid rgba(242, 242, 242, 0.2);
+  }
+  @media screen and (max-width: 375px) {
+    display: none;
   }
 `;
 

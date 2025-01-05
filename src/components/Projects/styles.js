@@ -9,6 +9,9 @@ export const Container = styled.div`
   padding: 20px;
   background-color:transparent;
   border-radius: 10px;
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
 `;
 
 export const ReposList = styled.ul`

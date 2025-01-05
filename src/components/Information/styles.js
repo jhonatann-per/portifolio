@@ -7,6 +7,9 @@ export const Container = styled.div`
   width: 80vw;
   height: 30vh;
   background-color: transparent;
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
 `;
 
 export const ItemBox = styled.div`

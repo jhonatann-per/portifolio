@@ -21,6 +21,7 @@ const Technologies = () => {
         <TechItem><TechImage src={reactIcon} alt="React JS" /><p>React JS</p> </TechItem>
         <TechItem><TechImage src={nodeIcon} alt="Node JS" /><p>Node JS</p></TechItem>
       </TechList>
+
     </Container>
   );
 };

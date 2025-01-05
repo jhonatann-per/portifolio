@@ -13,6 +13,9 @@ export const Container = styled.div`
   border-radius: 10px;
   margin: 10px 0;
   border: 1px solid white;
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
 `;
 
 export const Title = styled.h2`
