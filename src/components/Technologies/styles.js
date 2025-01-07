@@ -14,7 +14,8 @@ export const Container = styled.div`
   margin: 10px 0;
   border: 1px solid white;
   @media screen and (max-width: 375px) {
-    display: none;
+    height: auto;
+    margin-bottom: 20px;
   }
 `;
 
@@ -30,6 +31,9 @@ export const TechList = styled.div`
   align-items: center;
   list-style: none;
   padding: 0;
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+  }
 `;
 
 export const TechItem = styled.li`

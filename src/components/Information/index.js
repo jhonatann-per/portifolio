@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, ItemBox, Title, Description } from './styles';
+import { Container, ItemBox, Title, Description, ContainerTec } from './styles';
 
 const Information = () => {
   const items = [
@@ -23,12 +23,14 @@ const Information = () => {
 
   return (
     <Container>
-      {items.map((item, index) => (
-        <ItemBox key={index}>
-          <Title>{item.title}</Title>
-          <Description>{item.description}</Description>
-        </ItemBox>
-      ))}
+      <ContainerTec>
+        {items.map((item, index) => (
+          <ItemBox key={index}>
+            <Title>{item.title}</Title>
+            <Description>{item.description}</Description>
+          </ItemBox>
+        ))}
+      </ContainerTec>
     </Container>
   );
 };
