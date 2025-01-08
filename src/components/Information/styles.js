@@ -2,18 +2,20 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center; /* Alinhe os itens ao centro */
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   background-color: transparent;
-  padding: 20px; /* Espaçamento para melhorar a aparência */
+  padding: 20px;
+  position: relative; /* Necessário para posicionar as setas */
 `;
 
 export const ContainerTec = styled.div`
-  width: 80%; /* Itens ocupando 80% da largura */
+  width: 80%;
   display: flex;
-  justify-content: space-between; /* Distribuição igual do espaço */
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 100px;
 
@@ -23,10 +25,10 @@ export const ContainerTec = styled.div`
 `;
 
 export const ItemBox = styled.div`
-  flex: 1; 
-  width: 20%; 
+  flex: 1;
+  width: 23%;
   height: 200px;
-  margin: 0 2.5%;
+  margin: 10px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -43,9 +45,8 @@ export const ItemBox = styled.div`
   }
 
   @media screen and (max-width: 375px) {
-    width: 100%;
+    width: 100%; 
     margin-bottom: 15px;
-    margin: none;
   }
 `;
 
@@ -56,4 +57,27 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   color: #666;
+`;
+
+export const Arrow = styled.div`
+  font-size: 2.5rem;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  &:hover {
+    color: #666;
+  }
+
+  ${({ left }) => left && `
+    left: 10px;
+  `}
+
+  ${({ right }) => right && `
+    right: 10px;
+  `}
 `;

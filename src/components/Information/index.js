@@ -1,5 +1,6 @@
-import React from 'react';
-import { Container, ItemBox, Title, Description, ContainerTec } from './styles';
+import React, { useEffect, useState } from 'react';
+import { Container, ItemBox, Title, Description, ContainerTec, Arrow } from './styles';
+import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 
 const Information = () => {
   const items = [
@@ -21,16 +22,66 @@ const Information = () => {
     },
   ];
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 375);
+
+  const showItem = (index) => {
+    const items = document.querySelectorAll('.item');
+    items.forEach((item, i) => {
+      item.style.display = i === index ? 'block' : 'none';
+    });
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth <= 375;
+      setIsMobile(mobile);
+      if (!mobile) {
+        const items = document.querySelectorAll('.item');
+        items.forEach(item => item.style.display = 'block');
+      } else {
+        showItem(currentIndex);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, [currentIndex]);
+
+  const nextSlide = () => {
+    const nextIndex = (currentIndex + 1) % items.length;
+    setCurrentIndex(nextIndex);
+    showItem(nextIndex);
+  };
+
+  const prevSlide = () => {
+    const prevIndex = (currentIndex - 1 + items.length) % items.length;
+    setCurrentIndex(prevIndex);
+    showItem(prevIndex);
+  };
+
   return (
     <Container>
+      {isMobile && (
+        <Arrow onClick={prevSlide} left>
+          <BiChevronLeft />
+        </Arrow>
+      )}
       <ContainerTec>
         {items.map((item, index) => (
-          <ItemBox key={index}>
+          <ItemBox key={index} className="item">
             <Title>{item.title}</Title>
             <Description>{item.description}</Description>
           </ItemBox>
         ))}
       </ContainerTec>
+      {isMobile && (
+        <Arrow onClick={nextSlide} right>
+          <BiChevronRight />
+        </Arrow>
+      )}
     </Container>
   );
 };
