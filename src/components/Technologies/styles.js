@@ -5,17 +5,14 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 77vw;
-  height: 30vh;
+  height: 100vh;
   padding: 20px;
   background-color:transparent;
   border-radius: 10px;
-  margin: 10px 0;
-  border: 1px solid white;
+
   @media screen and (max-width: 375px) {
     height: auto;
-    margin-bottom: 20px;
   }
 `;
 
@@ -36,8 +33,10 @@ export const TechList = styled.div`
   }
 `;
 
-export const TechItem = styled.li`
+export const TechItem = styled.div`
   display: flex;
+  width: 300px;
+  border: 1px solid #fff;
   align-items: center;
   justify-content: center;
   flex-direction: column;

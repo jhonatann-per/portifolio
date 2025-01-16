@@ -8,7 +8,10 @@ export const Container = styled.div`
   height: 100%;
   background-color: transparent;
   padding: 20px;
-  position: relative; /* Necessário para posicionar as setas */
+
+  @media screen and (max-width: 375px) {
+    padding: 0;
+  }
 `;
 
 export const ContainerTec = styled.div`
@@ -18,9 +21,16 @@ export const ContainerTec = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 100px;
+  h2 {
+    color: #fff;
+  }
+  p {
+    color: #fff
+  }
 
   @media screen and (max-width: 375px) {
-    flex-direction: column;
+    
+    height: 200px;
   }
 `;
 
@@ -34,7 +44,7 @@ export const ItemBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #251c31;
   border-radius: 5px;
   border: 2px solid #ccc;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -47,16 +57,8 @@ export const ItemBox = styled.div`
   @media screen and (max-width: 375px) {
     width: 100%; 
     margin-bottom: 15px;
+    margin: 0;
   }
-`;
-
-export const Title = styled.h2`
-  margin-bottom: 10px;
-  color: #333;
-`;
-
-export const Description = styled.p`
-  color: #666;
 `;
 
 export const Arrow = styled.div`
@@ -64,7 +66,7 @@ export const Arrow = styled.div`
   color: #333;
   cursor: pointer;
   user-select: none;
-  position: absolute;
+  display: flex;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;

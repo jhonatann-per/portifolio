@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, ItemBox, Title, Description, ContainerTec, Arrow } from './styles';
+import { Container, ItemBox, ContainerTec, Arrow } from './styles';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 
 const Information = () => {
@@ -72,8 +72,8 @@ const Information = () => {
       <ContainerTec>
         {items.map((item, index) => (
           <ItemBox key={index} className="item">
-            <Title>{item.title}</Title>
-            <Description>{item.description}</Description>
+            <h2>{item.title}</h2>
+            <p>{item.description}</p>
           </ItemBox>
         ))}
       </ContainerTec>

@@ -11,7 +11,7 @@ import nodeIcon from '../../assets/node.png';
 const Technologies = () => {
   return (
     <Container id="tecnologias">
-      <Title>Tecnologias</Title>
+      <Title>Tecnologias e Ferramentas</Title>
       <TechList>
         <TechItem><TechImage src={gitIcon} alt="Git" /><p>GitHub</p></TechItem>
         <TechItem><TechImage src={htmlIcon} alt="HTML" /><p>HTML</p></TechItem>

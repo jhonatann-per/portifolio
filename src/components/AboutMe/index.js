@@ -47,7 +47,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <Container>
+    <Container id="sobreMim">
       <ConteudoPerfil>
         <TituloContainer>
           <Titulo>Jhonatan Santos</Titulo>
