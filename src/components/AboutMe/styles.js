@@ -24,6 +24,11 @@ export const Container = styled.div`
   border-radius: 10px;
   margin: 10px 0;
   height: 80vh;
+
+  h2 {
+    font-size: 2rem;
+    color: white;
+  }
   
   @media screen and (max-width: 375px) {
     flex-direction: column;
@@ -51,11 +56,6 @@ export const TituloContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-`;
-
-export const Titulo = styled.h2`
-  margin-bottom: 10px;
-  color: #fff;
 `;
 
 export const ImagePerfil = styled.img`

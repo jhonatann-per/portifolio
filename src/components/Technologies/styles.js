@@ -5,29 +5,25 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 77vw;
-  height: 100vh;
-  padding: 20px;
+  width: 100%;
   background-color:transparent;
   border-radius: 10px;
-
+  padding: 18px;
+  p {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+  }
   @media screen and (max-width: 375px) {
     height: auto;
+    width: 100%;
   }
 `;
 
-export const Title = styled.h2`
-  margin-bottom: 10px;
-  color: white;
-`;
-
 export const TechList = styled.div`
-  width: 100%;
+  width: 80%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   list-style: none;
-  padding: 0;
   @media screen and (max-width: 375px) {
     flex-direction: column;
   }
@@ -38,11 +34,16 @@ export const TechItem = styled.div`
   width: 300px;
   border: 1px solid #fff;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  
+  flex-direction: row;
+  background-color: #251c31;
+  border-radius: 5px;
   color: white;
-  padding: 20px;
+  padding: 0.65rem 0.75rem;
   margin: 15px;
+  p {
+    font-size: 20px;
+  }
 `;
 
 export const TechImage = styled.img`

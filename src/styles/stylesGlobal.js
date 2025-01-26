@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color:#11071f; 
     color: #333;  
     line-height: 1.6;
@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     margin-bottom: 15px;
+    font-weight: bold;
   }
 
   a {

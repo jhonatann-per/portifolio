@@ -24,7 +24,7 @@ export const OptionsButton = styled.div`
   align-items: center;
   justify-content: center;
   width: auto;
-  border-radius: 24px;
+  border-radius: 35px;
   border: 1px solid rgba(242, 242, 242, 0.1);
   padding: 0.5rem;
   background-color: rgba(242, 242, 242, 0.05);

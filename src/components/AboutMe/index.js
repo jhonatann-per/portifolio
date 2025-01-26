@@ -11,7 +11,6 @@ import {
   ListItem,
   SocialDiv,
   Skils,
-  Titulo
 } from "./styles";
 
 const AboutMe = () => {
@@ -50,7 +49,7 @@ const AboutMe = () => {
     <Container id="sobreMim">
       <ConteudoPerfil>
         <TituloContainer>
-          <Titulo>Jhonatan Santos</Titulo>
+          <h2>Jhonatan Santos</h2>
         </TituloContainer>
         { perfilImg && (
           <ImagePerfil 
