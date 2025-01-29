@@ -18,7 +18,7 @@ const Technologies = () => {
         <TechItem><TechImage src={nodeIcon} alt="Node JS" /><p>Node JS</p></TechItem>
       </TechList>
       <TechList>
-      <TechItem><TechImage src={gitIcon} alt="Git" /><p>GitHub</p></TechItem>
+        <TechItem><TechImage src={gitIcon} alt="Git" /><p>GitHub</p></TechItem>
         <TechItem><TechImage src={htmlIcon} alt="HTML" /><p>HTML</p></TechItem>
         <TechItem><TechImage src={cssIcon} alt="CSS" /><p>CSS</p></TechItem>
         <TechItem><TechImage src={jsIcon} alt="JavaScript" /><p>JavaScript</p></TechItem>

@@ -9,7 +9,7 @@ export const Container = styled.div`
   padding: 20px;
   background-color:transparent;
   border-radius: 10px;
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 450px) {
     display: none;
   }
 `;

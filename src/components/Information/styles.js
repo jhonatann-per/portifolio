@@ -9,7 +9,7 @@ export const Container = styled.div`
   background-color: transparent;
   padding: 20px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 450px) {
     padding: 0;
   }
 `;
@@ -28,8 +28,7 @@ export const ContainerTec = styled.div`
     color: #fff
   }
 
-  @media screen and (max-width: 375px) {
-    
+  @media screen and (max-width: 450px) {
     height: 200px;
   }
 `;
@@ -54,7 +53,7 @@ export const ItemBox = styled.div`
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 450px) {
     width: 100%; 
     margin-bottom: 15px;
     margin: 0;

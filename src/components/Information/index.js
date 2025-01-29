@@ -34,7 +34,7 @@ const Information = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const mobile = window.innerWidth <= 375;
+      const mobile = window.innerWidth <= 450;
       setIsMobile(mobile);
       if (!mobile) {
         const items = document.querySelectorAll('.item');

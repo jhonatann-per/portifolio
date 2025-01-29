@@ -30,7 +30,7 @@ export const Container = styled.div`
     color: white;
   }
   
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 450px) {
     flex-direction: column;
     align-items: stretch;
     height: auto;
@@ -45,7 +45,7 @@ export const ConteudoPerfil = styled.div`
   width: 25%;
   margin-bottom: 10px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 450px) {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -64,7 +64,7 @@ export const ImagePerfil = styled.img`
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 450px) {
     width: 50%;
   }
 `;
@@ -83,11 +83,11 @@ export const ConteudoTexto = styled.div`
     font-size: 20px;
     font-weight: normal;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 450px) {
     font-size: 15px;
   }
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 450px) {
     width: 95%;
   }
 `;
@@ -102,7 +102,7 @@ export const ListDiv = styled.div`
   padding-top: 15px;
   text-align: left;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 450px) {
     flex-direction: column;
     padding-top: 10px;
   }
@@ -120,7 +120,7 @@ export const ListItem = styled.li`
   font-weight: normal;
   display: inline;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 450px) {
     display: none;
   }
 `;
@@ -131,7 +131,7 @@ export const SocialDiv = styled.div`
   padding: 15px;
   color: white;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 450px) {
     flex-direction: row;
 
     p{
@@ -150,7 +150,7 @@ export const SocialDiv = styled.div`
       text-decoration: none;
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 450px) {
       margin-right: 0;
     }
   }
@@ -159,7 +159,7 @@ export const SocialDiv = styled.div`
 export const Skils = styled.div`
   animation: ${slideAndFade} 4.5s linear infinite;
   
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 450px) {
       width: 110px;
       font-size: 10px;
     }
