@@ -14,19 +14,6 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.6;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 20px;
-  }
-
-  p {
-    margin-bottom: 15px;
-    font-weight: bold;
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
 `;
 
 export default GlobalStyle;

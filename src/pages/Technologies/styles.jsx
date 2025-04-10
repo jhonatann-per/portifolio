@@ -6,15 +6,18 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 100%;
+  padding: 3rem;
   background-color:transparent;
   border-radius: 10px;
-  padding: 18px;
 
-  p {
-    font-size: 25px;
+ 
+
+  h1 {
+    font-size: 2.75rem;
     margin-bottom: 10px;
     color: white;
+    padding-bottom: 2rem;
   }
 
   @media screen and (max-width: 450px) {
@@ -28,6 +31,8 @@ export const TechList = styled.div`
   width: 100%;
   display: flex;
   list-style: none;
+  gap: 1rem;
+  margin-bottom: 1rem;
 
   @media screen and (max-width: 450px) {
     flex-direction: column;
@@ -39,15 +44,12 @@ export const TechList = styled.div`
 export const TechItem = styled.div`
   display: flex;
   width: 300px;
-  border: 1px solid #fff;
   align-items: center;
-  
   flex-direction: row;
   background-color: #251c31;
   border-radius: 5px;
   color: white;
   padding: 0.65rem 0.75rem;
-  margin: 15px;
 
   p {
     font-size: 20px;
