@@ -1,18 +1,18 @@
 import React from 'react';
 import Technologies from '../Technologies';
-import Projects from '../Projects';
 import Presentation from '../Presentation';
 import Footer from '../../components/Footer';
+import Projects from '../Projects';
 import { Container } from './styles';
 import { AboutMe } from '../AboutMe';
 
-const Home = () => {
+const Home = ({ projectsRef, presentationRef }) => {
   return (
     <Container>
-      <Presentation />
+      <Presentation ref={presentationRef} />
       <AboutMe />
       <Technologies />
-      <Projects />
+      <Projects ref={projectsRef} mostrarTitulo={true} />
       <Footer />
     </Container>
   );

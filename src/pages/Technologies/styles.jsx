@@ -24,6 +24,9 @@ export const Container = styled.div`
     height: auto;
     justify-content: center;
     padding: 0;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
   }
 `;
 

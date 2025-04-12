@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, forwardRef } from "react";
 import {
   Container,
   ImagePerfil,
@@ -7,12 +7,11 @@ import {
   BotaoCv,
   BotaoProjetos,
   ArrowDownImage,
-  Footer
+  Footer,
 } from "./styles";
 import Seta from "../../assets/seta.png";
 
-
-const Presentation = () => {
+const Presentation = forwardRef((props, ref) => {
   const [perfilImg, setPerfilImg] = useState('');
 
   useEffect(() => {
@@ -29,37 +28,35 @@ const Presentation = () => {
     fetchProfileData();
   }, []);
 
-
   return (
-    <Container id="sobreMim">
-        <AboutInformation>
-          <section>
-            <h1>Jhonatan Santos</h1>
-            <p>Desenvolvedor Front end</p>
-            <div>
+    <Container id="sobreMim" ref={ref}>
+      <AboutInformation>
+        <section>
+          <h1>Jhonatan Pereira</h1>
+          <p>Desenvolvedor Front end</p>
+          <div>
+            <a href="/curriculo-jhonatan-santos-frontend.pdf" download>
               <BotaoCv>Download CV</BotaoCv>
-              <BotaoProjetos>Meus Projetos</BotaoProjetos>
-            </div>
-          </section>
-        </AboutInformation>
-        <Footer>
-          <ArrowDownImage src={Seta} alt="Seta para baixo" />
-        </Footer>
-        <ConteudoPerfil>
-          { perfilImg && (
-            <ImagePerfil 
-              src={perfilImg} 
-              alt="Imagem de perfil" 
-            />
-          )}
-
-            
-          {/* <Skils>
-            <h1>{currentWord}</h1>
-          </Skils> */}
-        </ConteudoPerfil>
+            </a>
+            <BotaoProjetos>Meus Projetos</BotaoProjetos>
+          </div>
+        </section>
+      </AboutInformation>
+      
+      <Footer>
+        <ArrowDownImage src={Seta} alt="Seta para baixo" />
+      </Footer>
+      
+      <ConteudoPerfil>
+        {perfilImg && (
+          <ImagePerfil 
+            src={perfilImg} 
+            alt="Imagem de perfil" 
+          />
+        )}
+      </ConteudoPerfil>
     </Container>
   );
-};
+});
 
 export default Presentation;

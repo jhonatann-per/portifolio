@@ -11,7 +11,22 @@ export const Container = styled.div`
     gap: 1rem;
 
     div{
+        margin-top: 2rem;
         width: 70%;
-        text-align: center;
     }
+    
+    h1{
+        font-size: 2.75rem;
+    }
+
+    @media screen and (max-width: 450px) {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    div{
+        width: 90%;
+    }
+  }
 `;
