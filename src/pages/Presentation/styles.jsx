@@ -129,7 +129,7 @@ export const BotaoCv = styled.button`
   }
 `;
 
-export const BotaoProjetos = styled.button`
+export const BotaoContateMe = styled.button`
   padding: 0.875rem 1.75rem;
   border-radius: 0.375rem;
   font-size: 0.9rem;

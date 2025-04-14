@@ -6,7 +6,6 @@ import Header from "./components/Header";
 function App() {
   const projectsRef = useRef(null);
   const presentationRef = useRef(null);
-
   return (
     <div className="App">
       <GlobalStyle />

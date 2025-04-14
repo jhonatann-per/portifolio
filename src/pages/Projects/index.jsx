@@ -19,21 +19,21 @@ const projetos = [
     descricao:
       "O projeto Coffee Delivery é um sistema de compra de café, onde os usuários podem adicionar produtos ao carrinho e selecionar um CEP para a entrega. Com um design dinâmico e intuitivo, a plataforma oferece uma experiência de compra fácil e agradável.",
     imagem: require("../../assets/coffee.png"),
-    tecnologias: ["React", "TypeScript", "Styled-Components"],
+    tecnologias: ["React", "JavaScript", "Styled-Components"],
     githubLink: "https://github.com/jhonatann-per/coffee-delivery",
     externalLink: "https://coffee-commerce-nine.vercel.app/",
     imagemEsquerda: false
   },
-  {
-    titulo: "Coffee Delivery",
-    descricao:
-      "O projeto Coffee Delivery é um sistema de compra de café, onde os usuários podem adicionar produtos ao carrinho e selecionar um CEP para a entrega. Com um design dinâmico e intuitivo, a plataforma oferece uma experiência de compra fácil e agradável.",
-    imagem: require("../../assets/coffee.png"),
-    tecnologias: ["React", "TypeScript", "Styled-Components"],
-    githubLink: "https://github.com/jhonatann-per/coffee-delivery",
-    externalLink: "https://coffee-commerce-nine.vercel.app/",
-    imagemEsquerda: true
-  },
+  // {
+  //   titulo: "Coffee Delivery",
+  //   descricao:
+  //     "O projeto Coffee Delivery é um sistema de compra de café, onde os usuários podem adicionar produtos ao carrinho e selecionar um CEP para a entrega. Com um design dinâmico e intuitivo, a plataforma oferece uma experiência de compra fácil e agradável.",
+  //   imagem: require("../../assets/coffee.png"),
+  //   tecnologias: ["React", "JavaScript", "Styled-Components"],
+  //   githubLink: "https://github.com/jhonatann-per/coffee-delivery",
+  //   externalLink: "https://coffee-commerce-nine.vercel.app/",
+  //   imagemEsquerda: true
+  // },
 ];
 
 const ProjetoDestaque = forwardRef(({ mostrarTitulo = false }, ref) => {

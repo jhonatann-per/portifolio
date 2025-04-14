@@ -5,7 +5,7 @@ import {
   ConteudoPerfil,
   AboutInformation,
   BotaoCv,
-  BotaoProjetos,
+  BotaoContateMe,
   ArrowDownImage,
   Footer,
 } from "./styles";
@@ -38,7 +38,10 @@ const Presentation = forwardRef((props, ref) => {
             <a href="/curriculo-jhonatan-santos-frontend.pdf" download>
               <BotaoCv>Download CV</BotaoCv>
             </a>
-            <BotaoProjetos>Meus Projetos</BotaoProjetos>
+            {/* Alterado o botão para Contate-me e redirecionamento para WhatsApp */}
+            <a href="https://wa.me/5561983801578" target="_blank" rel="noopener noreferrer">
+              <BotaoContateMe>Contate-me</BotaoContateMe>
+            </a>
           </div>
         </section>
       </AboutInformation>
