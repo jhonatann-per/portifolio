@@ -9,7 +9,7 @@ import reactLogo from '../../assets/react.png';
 import nodeLogo from '../../assets/node.png';
 import nextLogo from '../../assets/next.webp';
  
-const Technologies = () => {
+export const Technologies = () => {
   return (
     <Container id="tecnologias">
       <h1>Tecnologias e Ferramentas</h1>
@@ -30,4 +30,3 @@ const Technologies = () => {
   );
 };
 
-export default Technologies;

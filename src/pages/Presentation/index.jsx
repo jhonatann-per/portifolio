@@ -11,7 +11,7 @@ import {
 } from "./styles";
 import Seta from "../../assets/seta.png";
 
-const Presentation = forwardRef((props, ref) => {
+export const Presentation = forwardRef((props, ref) => {
   const [perfilImg, setPerfilImg] = useState('');
 
   useEffect(() => {
@@ -61,5 +61,3 @@ const Presentation = forwardRef((props, ref) => {
     </Container>
   );
 });
-
-export default Presentation;

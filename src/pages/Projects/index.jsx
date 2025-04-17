@@ -36,7 +36,7 @@ const projetos = [
   // },
 ];
 
-const ProjetoDestaque = forwardRef(({ mostrarTitulo = false }, ref) => {
+export const ProjetoDestaque = forwardRef(({ mostrarTitulo = false }, ref) => {
   return (
     <Container ref={ref}>
       {mostrarTitulo && <TituloSecao>Meus Projetos</TituloSecao>}
@@ -72,5 +72,3 @@ const ProjetoDestaque = forwardRef(({ mostrarTitulo = false }, ref) => {
     </Container>
   );
 });
-
-export default ProjetoDestaque;

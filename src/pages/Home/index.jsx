@@ -1,10 +1,12 @@
 import React from 'react';
-import Technologies from '../Technologies';
-import Presentation from '../Presentation';
-import Footer from '../../components/Footer';
-import Projects from '../Projects';
+import { Technologies } from '../Technologies';
+import { Presentation } from '../Presentation';
+import { Footer } from '../../components/Footer';
+import { ProjetoDestaque } from '../Projects';
+
 import { Container } from './styles';
 import { AboutMe } from '../AboutMe';
+import { FormEmail } from '../FormEmail'; 
 
 const Home = ({ projectsRef, presentationRef }) => {
   return (
@@ -12,7 +14,8 @@ const Home = ({ projectsRef, presentationRef }) => {
       <Presentation ref={presentationRef} />
       <AboutMe />
       <Technologies />
-      <Projects ref={projectsRef} mostrarTitulo={true} />
+      <ProjetoDestaque ref={projectsRef} mostrarTitulo={true} />
+      <FormEmail />
       <Footer />
     </Container>
   );
