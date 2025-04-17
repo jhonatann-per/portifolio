@@ -7,7 +7,8 @@ import {
   Input,
   TextArea,
   Botao,
-  Erro
+  Erro,
+  Sucesso
 } from './styles';
 
 export const FormEmail = () => {
@@ -20,6 +21,7 @@ export const FormEmail = () => {
 
   const [contatos, setContatos] = useState([]);
   const [erro, setErro] = useState('');
+  const [sucesso, setSucesso] = useState('');
 
   const handleChange = (e) => {
     const { value, name } = e.target;
@@ -36,17 +38,32 @@ export const FormEmail = () => {
 
     if (!email || !name || !telefone || !message) {
       setErro('Erro: preencha todos os campos.');
+      setTimeout(() => {
+        setErro('');
+      }, 5000);
       return;
     }
 
     setErro('');
-
+    
     emailjs.send(
       process.env.REACT_APP_EMAILJS_SERVICE_ID,
       process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
       { name, email, telefone, message },
       process.env.REACT_APP_EMAILJS_USER_ID
-    );
+    )
+    .then(() => {
+      setSucesso('Mensagem enviada com sucesso!');
+      setTimeout(() => {
+        setSucesso('');
+      }, 5000);
+    })
+    .catch((error) => {
+      setErro('Erro ao enviar o e-mail. Tente novamente.');
+      setTimeout(() => {
+        setErro('');
+      }, 5000);
+    });
 
     setContatos((prev) => [
       ...prev,
@@ -97,6 +114,7 @@ export const FormEmail = () => {
       </Formulario>
 
       {erro && <Erro>{erro}</Erro>}
+      {sucesso && <Sucesso>{sucesso}</Sucesso>}
     </Container>
   );
 };

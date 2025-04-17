@@ -4,10 +4,15 @@ export const Container = styled.section`
   width: 92%;
   margin: 0 auto;
   padding: 3rem;
-    
+  margin-top: 3rem;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
   color: #fff;
+  
+  @media screen and (max-width: 450px) {
+    box-shadow: none;
+    background-color: #140d22;
+  }
 `;
 
 export const Titulo = styled.h2`
@@ -61,6 +66,14 @@ export const Erro = styled.p`
   text-align: center;
   font-weight: bold;
 `;
+
+export const Sucesso = styled.p`
+  color: #4CAF50; 
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+`;
+
 
 export const TextArea = styled.textarea`
   padding: 0.75rem 1rem;

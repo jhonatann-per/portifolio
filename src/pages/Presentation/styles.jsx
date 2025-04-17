@@ -14,7 +14,6 @@ export const Container = styled.div`
   @media screen and (max-width: 450px) {
     flex-direction: column;
     height: auto;
-    padding: 1rem;
     margin-top: 1.75rem;
   }
 `;
@@ -31,6 +30,7 @@ export const AboutInformation = styled.div`
   @media screen and (max-width: 450px) {
     width: 100%;
     order: 2;
+    padding-bottom: 0;
   }
 
   section {
@@ -74,18 +74,6 @@ const bounce = keyframes`
   }
 `;
 
-export const Footer = styled.footer`
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  height: 100%;
-
-  @media screen and (max-width: 450px) {
-    order: 3;
-    margin-top: 2rem;
-  }
-`;
-
 export const ConteudoPerfil = styled.div`
   display: flex;
   flex-direction: column;
@@ -107,7 +95,8 @@ export const ImagePerfil = styled.img`
   box-shadow: 0 0 90px rgba(255, 255, 255, 0.6);
 
   @media screen and (max-width: 450px) {
-    width: 50%;
+    width: 80%;
+    box-shadow: none;
   }
 `;
 
@@ -155,5 +144,17 @@ export const ArrowDownImage = styled.img`
 
   @media screen and (max-width: 450px) {
     width: 30px;
+  }
+`;
+
+export const Footer = styled.footer`
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100%;
+
+  @media screen and (max-width: 450px) {
+    order: 3;
+    margin-top: 1rem;
   }
 `;
