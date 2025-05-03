@@ -43,6 +43,15 @@ export const AboutInformation = styled.div`
     h1 {
       font-size: 2.75rem;
     }
+
+    @media screen and (max-width: 450px) {
+      justify-content: center;
+      align-items: center;
+
+      h1{
+        font-size: 1.35rem;
+      }
+  }
   }
 
   div {

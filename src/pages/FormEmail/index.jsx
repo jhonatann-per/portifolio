@@ -37,7 +37,7 @@ export const FormEmail = () => {
     const { email, name, telefone, message } = formData;
 
     if (!email || !name || !telefone || !message) {
-      setErro('Erro: preencha todos os campos.');
+      setErro('Preencha todos os campos.');
       setTimeout(() => {
         setErro('');
       }, 5000);

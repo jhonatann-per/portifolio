@@ -20,6 +20,9 @@ export const Titulo = styled.h2`
   margin-bottom: 1.5rem;
   text-align: center;
   color: #f0a500;
+  @media screen and (max-width: 450px) {
+    font-size: 1.35rem;
+  }
 `;
 
 export const Formulario = styled.form`
@@ -48,13 +51,12 @@ export const Input = styled.input`
 export const Botao = styled.button`
   background-color: #f0a500;
   color: #1e1e1e;
-  font-weight: bold;
   padding: 0.8rem 1rem;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s;
-
+  font-size: 20px;
   &:hover {
     background-color: #d98e00;
   }
@@ -64,7 +66,6 @@ export const Erro = styled.p`
   color: #ff4d4d;
   margin-top: 1rem;
   text-align: center;
-  font-weight: bold;
 `;
 
 export const Sucesso = styled.p`

@@ -1,10 +1,10 @@
 import React from 'react';
-import { FooterContainer } from './styles';
+import { Container } from './styles';
 
 export const Footer = () => {
   return (
-    <FooterContainer>
+    <Container>
       <p>© 2025 Desenvolvido por: Jhonatan santos. Todos os direitos reservados.</p>
-    </FooterContainer>
+    </Container>
   );
 };

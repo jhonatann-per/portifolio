@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FooterContainer = styled.footer`
+export const Container = styled.footer`
   position: relative;
   bottom: 0;
   width: 100%;
@@ -8,10 +8,7 @@ export const FooterContainer = styled.footer`
   color: white;
   text-align: center;
   padding: 1rem 0;
+  border-top: 1px solid #927d97;
+  margin-top: 2rem;
 `;
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-`;
