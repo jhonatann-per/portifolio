@@ -19,7 +19,7 @@ export const Titulo = styled.h2`
   font-size: 2rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  color: #f0a500;
+  color: #a855f7;
   @media screen and (max-width: 450px) {
     font-size: 1.35rem;
   }
@@ -49,7 +49,7 @@ export const Input = styled.input`
 `;
 
 export const Botao = styled.button`
-  background-color: #f0a500;
+  background-color: #a855f7;
   color: #1e1e1e;
   padding: 0.8rem 1rem;
   border: none;

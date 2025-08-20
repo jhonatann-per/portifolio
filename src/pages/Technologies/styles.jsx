@@ -46,7 +46,7 @@ export const TechList = styled.div`
 
 export const TechItem = styled.div`
   display: flex;
-  width: 300px;
+  width: 90%;
   align-items: center;
   flex-direction: row;
   background-color: #251c31;

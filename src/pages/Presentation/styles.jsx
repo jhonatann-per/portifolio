@@ -6,7 +6,9 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: row;
   width: 100%;
-  height: 90vh;
+  height: 100vh;              
+  max-height: 800px;         
+  min-height: 500px;        
   border-radius: 10px;
   margin: 0 auto;
   padding: 0rem 3rem 3rem 3rem;
@@ -15,8 +17,10 @@ export const Container = styled.div`
     flex-direction: column;
     height: auto;
     margin-top: 1.75rem;
+    max-height: none;    
   }
 `;
+
 
 export const AboutInformation = styled.div`
   color: white;
