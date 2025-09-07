@@ -8,6 +8,8 @@ import tailwindLogo from '../../assets/tailwind.png';
 import reactLogo from '../../assets/react.png';
 import nodeLogo from '../../assets/node.png';
 import nextLogo from '../../assets/next.webp';
+import typescript from '../../assets/typescript.svg';
+import express from '../../assets/express.svg'
  
 export const Technologies = () => {
   return (
@@ -17,6 +19,7 @@ export const Technologies = () => {
         <TechItem><TechImage src={tailwindLogo} alt="Tailwind" /><p>Tailwind</p></TechItem>
         <TechItem><TechImage src={reactLogo} alt="React JS" /><p>React JS</p> </TechItem>
         <TechItem><TechImage src={nodeLogo} alt="Node JS" /><p>Node JS</p></TechItem>
+        <TechItem><TechImage src={express} alt="Express" /><p>Express</p></TechItem>
         <TechItem><TechImage src={nextLogo} alt="Next" /><p>Next.js</p></TechItem>
       </TechList>
       <TechList>
@@ -24,6 +27,7 @@ export const Technologies = () => {
         <TechItem><TechImage src={htmlLogo} alt="HTML" /><p>HTML</p></TechItem>
         <TechItem><TechImage src={cssLogo} alt="CSS" /><p>CSS</p></TechItem>
         <TechItem><TechImage src={jsLogo} alt="JavaScript" /><p>JavaScript</p></TechItem>
+        <TechItem><TechImage src={typescript} alt="Typescript" /><p>Typescript</p></TechItem>
       </TechList>
 
     </Container>

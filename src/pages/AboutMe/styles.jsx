@@ -12,7 +12,8 @@ export const Container = styled.div`
 
     div{
         margin-top: 2rem;
-        width: 70%;
+        width: 100%;
+        text-align: center;
     }
     
     h1{

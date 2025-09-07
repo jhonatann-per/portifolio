@@ -33,9 +33,9 @@ export const Presentation = forwardRef((props, ref) => {
       <AboutInformation>
         <section>
           <h1>Jhonatan Pereira</h1>
-          <p>Desenvolvedor Front end</p>
+          <p>Desenvolvedor Full Stack</p>
           <div>
-            <a href="/curriculo-jhonatan-santos-frontend.pdf" download>
+            <a href="/curriculo-jhonatan-santos.pdf" download>
               <BotaoCv>Download CV</BotaoCv>
             </a>
             <a href="https://wa.me/5561983801578" target="_blank" rel="noopener noreferrer">
